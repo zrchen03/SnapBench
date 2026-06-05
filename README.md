@@ -27,11 +27,15 @@ This repo ships the benchmark data and scripts to **build the full benchmark loc
 ## Setup
 
 ```bash
+git lfs install
 git clone <repo-url>
 cd SnapBench
+git lfs pull
 pip install -r requirements.txt
 export BENCH_IMAGES_DIR=$(pwd)/bench_images
 ```
+
+Images are stored with **Git LFS**. Run `git lfs install` once on your machine before cloning.
 
 ---
 
