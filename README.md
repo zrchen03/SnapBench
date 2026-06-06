@@ -93,9 +93,3 @@ SnapBench/
 Image paths in `snap_bench.json`:
 - Query: `bench_images/query/{query_image_local}`
 - Gallery: `bench_images/gallery/{local}`
-
----
-
-## Citation
-
-*(Will be added upon paper acceptance.)*
