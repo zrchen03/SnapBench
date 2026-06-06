@@ -5,7 +5,7 @@ SnapBench is a benchmark for **snap-and-ask** mobile interactions: a user captur
 | | |
 |---|---|
 | Queries | 1,145 (image + text) |
-| Gallery | 9,085 items (9,059 unique images + captions) |
+| Gallery | 9,085 items (image + caption) |
 | Conditions | 54 (1 clean + 8 text + 45 image perturbations) |
 
 This repo ships the benchmark data and scripts to **build the full benchmark locally**. It does not include evaluation code.
@@ -18,7 +18,7 @@ This repo ships the benchmark data and scripts to **build the full benchmark loc
 |---|---|---|
 | Benchmark metadata | `benchmark/snap_bench.json` | included |
 | Query images | `bench_images/query/` (1,145) | included |
-| Gallery images | `bench_images/gallery/` (9,059) | included |
+| Gallery | `bench_images/gallery/` (9,085 items) | included |
 | Text perturbations | `snap_bench.json` → `text_perturbations` | included |
 | Image perturbations | `bench_images/perturbed/` (~51,675) | **generate locally** |
 
@@ -28,12 +28,14 @@ This repo ships the benchmark data and scripts to **build the full benchmark loc
 
 ```bash
 git lfs install
-git clone <repo-url>
+git clone <REPO_URL>
 cd SnapBench
 git lfs pull
 pip install -r requirements.txt
 export BENCH_IMAGES_DIR=$(pwd)/bench_images
 ```
+
+Replace `<REPO_URL>` with the anonymized repository link provided for review.
 
 Images are stored with **Git LFS**. Run `git lfs install` once on your machine before cloning.
 
