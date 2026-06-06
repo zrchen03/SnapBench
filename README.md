@@ -47,7 +47,7 @@ After cloning, you already have the clean benchmark (queries, gallery, and text 
 
 ### Step 1. Generate image perturbations
 
-15 perturbation types × 3 severity levels (sev1 / sev3 / sev5) × 1,145 queries = **51,675 images**:
+15 perturbation types × 3 severity levels (sev1 / sev2 / sev3) × 1,145 queries = **51,675 images**:
 
 ```bash
 python benchmark/gen_image_perturbations.py
@@ -56,7 +56,7 @@ python benchmark/gen_image_perturbations.py
 Output:
 
 ```
-bench_images/perturbed/{type}/sev{1,3,5}/{query_id}.jpg
+bench_images/perturbed/{type}/sev{1,2,3}/{query_id}.jpg
 ```
 
 Preview the workload without writing files:

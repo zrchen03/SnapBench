@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-SnapBench: image perturbation generator (sev 1/3/5)
+SnapBench: image perturbation generator (sev 1/2/3)
 ====================================================
 Apply 15 perturbation types × 3 severity levels to 1,145 query images.
-Output: bench_images/perturbed/{type}/sev{1,3,5}/{query_id}.jpg
+Output: bench_images/perturbed/{type}/sev{1,2,3}/{query_id}.jpg
 Total: 1,145 × 15 × 3 = 51,675 images (not shipped; generate locally).
 
 Usage:
@@ -34,7 +34,7 @@ def resolve_query_image(record):
         return fname
     return os.path.join(query_image_dir(), fname)
 
-SEVERITY_LEVELS = [1, 3, 5]
+SEVERITY_LEVELS = [1, 2, 3]
 
 # ── Image conversion helpers ────────────────────────────────────────────────
 def p2c(img):
@@ -44,85 +44,84 @@ def c2p(arr):
     return Image.fromarray(cv2.cvtColor(arr, cv2.COLOR_BGR2RGB))
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# SEVERITY PARAMETER TABLE
-# From apply_perturbations.py, taking sev 1/3/5 three levels
+# SEVERITY PARAMETER TABLE (levels 1 / 2 / 3 = mild / medium / strong)
 # ═══════════════════════════════════════════════════════════════════════════════
 
 SEV_PARAMS = {
     "defocus_blur": {
         1: {"sigma": 1.0},
-        3: {"sigma": 3.5},
-        5: {"sigma": 10.0},
+        2: {"sigma": 3.5},
+        3: {"sigma": 10.0},
     },
     "motion_blur": {
         1: {"ks": 5},
-        3: {"ks": 13},
-        5: {"ks": 25},
+        2: {"ks": 13},
+        3: {"ks": 25},
     },
     "low_light": {
         1: {"brightness": 0.70, "noise_std": 3},
-        3: {"brightness": 0.40, "noise_std": 10},
-        5: {"brightness": 0.15, "noise_std": 22},
+        2: {"brightness": 0.40, "noise_std": 10},
+        3: {"brightness": 0.15, "noise_std": 22},
     },
     "overexposure": {
         1: {"factor": 1.4},
-        3: {"factor": 2.2},
-        5: {"factor": 3.0},
+        2: {"factor": 2.2},
+        3: {"factor": 3.0},
     },
     "low_resolution": {
         1: {"scale": 0.50},
-        3: {"scale": 0.25},
-        5: {"scale": 0.08},
+        2: {"scale": 0.25},
+        3: {"scale": 0.08},
     },
     "compression": {
         1: {"quality": 50},
-        3: {"quality": 18},
-        5: {"quality": 5},
+        2: {"quality": 18},
+        3: {"quality": 5},
     },
     "rotation": {
         1: {"angle": 10},
-        3: {"angle": 45},
-        5: {"angle": 180},
+        2: {"angle": 45},
+        3: {"angle": 180},
     },
     "perspective": {
         1: {"d_ratio": 0.10},
-        3: {"d_ratio": 0.20},
-        5: {"d_ratio": 0.30},
+        2: {"d_ratio": 0.20},
+        3: {"d_ratio": 0.30},
     },
     "lens_distortion": {
         1: {"k1": -0.10},
-        3: {"k1": -0.20},
-        5: {"k1": -0.30},
+        2: {"k1": -0.20},
+        3: {"k1": -0.30},
     },
     "cropping": {
         1: {"keep_ratio": 0.90},
-        3: {"keep_ratio": 0.65},
-        5: {"keep_ratio": 0.40},
+        2: {"keep_ratio": 0.65},
+        3: {"keep_ratio": 0.40},
     },
     "downscale": {
         1: {"scale": 0.20},
-        3: {"scale": 0.10},
-        5: {"scale": 0.04},
+        2: {"scale": 0.10},
+        3: {"scale": 0.04},
     },
     "watermark": {
         1: {"opacity": 80,  "mode": "single"},      # 1 watermark text
-        3: {"opacity": 160, "mode": "half_tile"},    # tiled 50% area
-        5: {"opacity": 220, "mode": "full_tile"},    # full image tiled
+        2: {"opacity": 160, "mode": "half_tile"},    # tiled 50% area
+        3: {"opacity": 220, "mode": "full_tile"},    # full image tiled
     },
     "mosaic": {
         1: {"bs": 42, "n_blocks": 1, "block_ratio": 0.20},
-        3: {"bs": 42, "n_blocks": 2, "block_ratio": 0.35},
-        5: {"bs": 42, "n_blocks": 4, "block_ratio": 0.55},
+        2: {"bs": 42, "n_blocks": 2, "block_ratio": 0.35},
+        3: {"bs": 42, "n_blocks": 4, "block_ratio": 0.55},
     },
     "scribble": {
         1: {"n_lines": 3, "thickness": 2},
-        3: {"n_lines": 6, "thickness": 4},
-        5: {"n_lines": 9, "thickness": 5},
+        2: {"n_lines": 6, "thickness": 4},
+        3: {"n_lines": 9, "thickness": 5},
     },
     "ui_elements": {
         1: {"elements": ["top_bar"]},                       # top bar only ~5%
-        3: {"elements": ["top_bar", "bottom_bar"]},         # top + bottom
-        5: {"elements": ["top_bar", "bottom_bar", "address_bar", "fab_button"]},  # full UI
+        2: {"elements": ["top_bar", "bottom_bar"]},         # top + bottom
+        3: {"elements": ["top_bar", "bottom_bar", "address_bar", "fab_button"]},  # full UI
     },
 }
 
@@ -130,21 +129,21 @@ SEV_PARAMS = {
 # 15 IMAGE PERTURBATION FUNCTIONS (parameterized by severity)
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def perturb_low_light(img, sev=5, **kw):
+def perturb_low_light(img, sev=3, **kw):
     params = SEV_PARAMS["low_light"][sev]
     arr = np.array(img).astype(np.float32) * params["brightness"]
     noise = np.random.randn(*arr.shape) * params["noise_std"]
     return Image.fromarray(np.clip(arr + noise, 0, 255).astype(np.uint8))
 
-def perturb_overexposure(img, sev=5, **kw):
+def perturb_overexposure(img, sev=3, **kw):
     params = SEV_PARAMS["overexposure"][sev]
     return Image.fromarray(np.clip(np.array(img).astype(np.float32) * params["factor"], 0, 255).astype(np.uint8))
 
-def perturb_defocus_blur(img, sev=5, **kw):
+def perturb_defocus_blur(img, sev=3, **kw):
     params = SEV_PARAMS["defocus_blur"][sev]
     return img.filter(ImageFilter.GaussianBlur(radius=params["sigma"]))
 
-def perturb_motion_blur(img, sev=5, **kw):
+def perturb_motion_blur(img, sev=3, **kw):
     params = SEV_PARAMS["motion_blur"][sev]
     ks = params["ks"]
     arr = p2c(img)
@@ -152,20 +151,20 @@ def perturb_motion_blur(img, sev=5, **kw):
     k[ks // 2, :] = 1.0 / ks
     return c2p(cv2.filter2D(arr, -1, k))
 
-def perturb_compression(img, sev=5, **kw):
+def perturb_compression(img, sev=3, **kw):
     params = SEV_PARAMS["compression"][sev]
     buf = io.BytesIO()
     img.save(buf, format="JPEG", quality=params["quality"])
     buf.seek(0)
     return Image.open(buf).copy()
 
-def perturb_low_resolution(img, sev=5, **kw):
+def perturb_low_resolution(img, sev=3, **kw):
     params = SEV_PARAMS["low_resolution"][sev]
     w, h = img.size
     sw, sh = max(4, int(w * params["scale"])), max(4, int(h * params["scale"]))
     return img.resize((sw, sh), Image.NEAREST).resize((w, h), Image.NEAREST)
 
-def perturb_rotation(img, sev=5, **kw):
+def perturb_rotation(img, sev=3, **kw):
     params = SEV_PARAMS["rotation"][sev]
     angle = kw.get("angle", params["angle"])
     w, h = img.size
@@ -180,7 +179,7 @@ def perturb_rotation(img, sev=5, **kw):
     cx, cy = ew // 2, eh // 2
     return rotated.crop((cx - w // 2, cy - h // 2, cx - w // 2 + w, cy - h // 2 + h))
 
-def perturb_perspective(img, sev=5, **kw):
+def perturb_perspective(img, sev=3, **kw):
     params = SEV_PARAMS["perspective"][sev]
     arr = p2c(img)
     h, w = arr.shape[:2]
@@ -195,7 +194,7 @@ def perturb_perspective(img, sev=5, **kw):
         cropped = warped
     return c2p(cv2.resize(cropped, (w, h)))
 
-def perturb_lens_distortion(img, sev=5, **kw):
+def perturb_lens_distortion(img, sev=3, **kw):
     params = SEV_PARAMS["lens_distortion"][sev]
     arr = p2c(img)
     h, w = arr.shape[:2]
@@ -213,7 +212,7 @@ def perturb_lens_distortion(img, sev=5, **kw):
     cropped = dist[my:h - my, mx:w - mx]
     return c2p(cv2.resize(cropped, (w, h)))
 
-def perturb_cropping(img, sev=5, **kw):
+def perturb_cropping(img, sev=3, **kw):
     params = SEV_PARAMS["cropping"][sev]
     keep_ratio = kw.get("keep_ratio", params["keep_ratio"])
     w, h = img.size
@@ -221,12 +220,12 @@ def perturb_cropping(img, sev=5, **kw):
     x, y = random.randint(0, max(0, w - cw)), random.randint(0, max(0, h - ch))
     return img.crop((x, y, x + cw, y + ch))
 
-def perturb_downscale(img, sev=5, **kw):
+def perturb_downscale(img, sev=3, **kw):
     params = SEV_PARAMS["downscale"][sev]
     w, h = img.size
     return img.resize((max(4, int(w * params["scale"])), max(4, int(h * params["scale"]))), Image.LANCZOS)
 
-def perturb_watermark(img, sev=5, **kw):
+def perturb_watermark(img, sev=3, **kw):
     params = SEV_PARAMS["watermark"][sev]
     result = img.copy().convert("RGBA")
     w, h = result.size
@@ -261,7 +260,7 @@ def perturb_watermark(img, sev=5, **kw):
 
     return Image.alpha_composite(result, overlay).convert("RGB")
 
-def perturb_mosaic(img, sev=5, **kw):
+def perturb_mosaic(img, sev=3, **kw):
     params = SEV_PARAMS["mosaic"][sev]
     result = img.copy()
     w, h = img.size
@@ -286,7 +285,7 @@ def perturb_mosaic(img, sev=5, **kw):
         result.paste(small.resize((rw, rh), Image.NEAREST), (rx, ry))
     return result
 
-def perturb_scribble(img, sev=5, **kw):
+def perturb_scribble(img, sev=3, **kw):
     params = SEV_PARAMS["scribble"][sev]
     arr = p2c(img)
     h, w = arr.shape[:2]
@@ -306,7 +305,7 @@ def perturb_scribble(img, sev=5, **kw):
             cv2.line(arr, pts[i], pts[i + 1], color, thickness, cv2.LINE_AA)
     return c2p(arr)
 
-def perturb_ui_elements(img, sev=5, **kw):
+def perturb_ui_elements(img, sev=3, **kw):
     params = SEV_PARAMS["ui_elements"][sev]
     elements = params["elements"]
 
@@ -326,7 +325,7 @@ def perturb_ui_elements(img, sev=5, **kw):
 
     if "top_bar" in elements:
         bt = int(h * 0.05)  # sev1: ~5% height
-        if sev >= 3:
+        if sev >= 2:
             bt = int(h * 0.09)
         draw.rectangle([0, 0, w, bt], fill=(30, 30, 30, 245))
         draw.text((8, 2), "9:41", font=f_main, fill=(255, 255, 255, 230))
@@ -339,7 +338,7 @@ def perturb_ui_elements(img, sev=5, **kw):
             draw.text(((i + 1) * w // 4 - 6, h - bb + 4), item, font=f_main, fill=(255, 255, 255, 200))
 
     if "address_bar" in elements:
-        bt = int(h * 0.09) if sev >= 3 else int(h * 0.05)
+        bt = int(h * 0.09) if sev >= 2 else int(h * 0.05)
         ab_h = int(h * 0.05)
         draw.rectangle([0, bt, w, bt + ab_h], fill=(240, 240, 240, 210))
         draw.text((8, bt + 4), "www.example.com/photo", font=f_small, fill=(80, 80, 80, 200))
@@ -378,7 +377,7 @@ def run(benchmark_json: str, dry_run: bool = False):
     print(f"Severity levels: {SEVERITY_LEVELS}")
     print(f"Total images to generate: {len(data)} × {len(PERTURB_FNS)} × {len(SEVERITY_LEVELS)} = {len(data) * len(PERTURB_FNS) * len(SEVERITY_LEVELS)}")
 
-    # Create output directories: perturbed/{type}/sev{1,3,5}/
+    # Create output directories: perturbed/{type}/sev{1,2,3}/
     for pt_name in PERTURB_FNS:
         for sev in SEVERITY_LEVELS:
             out_dir = os.path.join(OUT_ROOT, pt_name, f"sev{sev}")
@@ -425,7 +424,7 @@ def run(benchmark_json: str, dry_run: bool = False):
                     # Scale angle proportionally to severity
                     base_angle = pt_params["angle"]
                     sev_angle = SEV_PARAMS["rotation"][sev]["angle"]
-                    # For sev1/3, use severity-defined angle; for sev5 (180°), keep 180
+                    # Use severity-defined rotation angle (sev3 = 180°)
                     kwargs["angle"] = sev_angle
 
                 # Set numpy/random seed for reproducibility
@@ -456,7 +455,7 @@ def run(benchmark_json: str, dry_run: bool = False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate perturbed images for SnapBench (sev 1/3/5)")
+    parser = argparse.ArgumentParser(description="Generate perturbed images for SnapBench (sev 1/2/3)")
     parser.add_argument("--benchmark", default=BENCHMARK,
                         help="Path to benchmark JSON (default: latest)")
     parser.add_argument("--dry-run", action="store_true",
