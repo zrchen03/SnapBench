@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: If you use SnapBench, please cite the following paper.
+title: "SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions"
+authors:
+  - family-names: Chen
+    given-names: Zirong
+  - family-names: Ye
+    given-names: Fuda
+  - family-names: Zhang
+    given-names: Kuan
+  - family-names: Du
+    given-names: Enjun
+  - family-names: Pu
+    given-names: Junfu
+  - family-names: Wang
+    given-names: Xinlei
+  - family-names: Zuo
+    given-names: Xinyu
+  - family-names: Duan
+    given-names: Lisheng
+  - family-names: Ma
+    given-names: Jin
+  - family-names: Zhang
+    given-names: Yongqi
+preferred-citation:
+  type: conference-paper
+  title: "SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions"
+  authors:
+    - family-names: Chen
+      given-names: Zirong
+    - family-names: Ye
+      given-names: Fuda
+    - family-names: Zhang
+      given-names: Kuan
+    - family-names: Du
+      given-names: Enjun
+    - family-names: Pu
+      given-names: Junfu
+    - family-names: Wang
+      given-names: Xinlei
+    - family-names: Zuo
+      given-names: Xinyu
+    - family-names: Duan
+      given-names: Lisheng
+    - family-names: Ma
+      given-names: Jin
+    - family-names: Zhang
+      given-names: Yongqi
+  year: 2026
+  collection-title: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+keywords:
+  - multimodal retrieval
+  - robustness
+  - snap-and-ask
+  - benchmark
+license: Apache-2.0
+repository-code: https://github.com/zrchen03/SnapBench
+url: https://huggingface.co/datasets/yefd/SnapBench

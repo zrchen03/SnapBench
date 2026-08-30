@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .DS_Store
 bench_images/perturbed/
+.venv/
+venv/
+*.npy
+eval/outputs/
+.pytest_cache/
