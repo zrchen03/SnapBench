@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-Findings%20of%20EMNLP%202026-blue)](https://openreview.net/forum?id=RWvQqyyWr3)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-yefd%2FSnapBench-yellow)](https://huggingface.co/datasets/yefd/SnapBench)
-[![License](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey)](LICENSE)
+[![License](https://img.shields.io/badge/Data-Research%20Only-red)](LICENSE)
 [![Code](https://img.shields.io/badge/Code-Apache%202.0-green)](LICENSE)
 
 **Findings of EMNLP 2026**
@@ -143,7 +143,7 @@ See [docs/DATA.md](docs/DATA.md) for field definitions and the Hugging Face mapp
 ## License and Takedown
 
 - **Code** (scripts, `snapbench`, `eval`): [Apache License 2.0](LICENSE)
-- **Data and images**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Data and images**: [research-only](LICENSE) — non-commercial academic use; no commercial redistribution
 
 Web-sourced images can be removed on request. See [TAKEDOWN.md](TAKEDOWN.md). Contact: [imzrchen@gmail.com](mailto:imzrchen@gmail.com), [yongqizhang@hkust-gz.edu.cn](mailto:yongqizhang@hkust-gz.edu.cn).
 

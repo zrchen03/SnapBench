@@ -53,6 +53,6 @@ keywords:
   - robustness
   - snap-and-ask
   - benchmark
-license: CC-BY-4.0
+license: other
 repository-code: https://github.com/zrchen03/SnapBench
 url: https://huggingface.co/datasets/yefd/SnapBench

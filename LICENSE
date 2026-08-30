@@ -4,10 +4,17 @@ SnapBench is released under a dual license.
    Apache License 2.0 (see below).
 
 2. Dataset, annotations, and images
-   Creative Commons Attribution 4.0 International (CC BY 4.0).
-   https://creativecommons.org/licenses/by/4.0/
+   Research-only license.
 
-   A takedown process for web-sourced images is described in TAKEDOWN.md.
+   You may use, copy, and modify the dataset solely for non-commercial
+   academic or research purposes. Commercial use and commercial
+   redistribution are not permitted.
+
+   If you use the dataset, please cite the SnapBench paper. A takedown
+   process for web-sourced images is described in TAKEDOWN.md.
+
+   Copyright remains with the authors. This research-only grant does not
+   transfer ownership of the images or annotations.
 
 
                                  Apache License
