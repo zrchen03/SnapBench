@@ -8,7 +8,7 @@
 
 **Findings of EMNLP 2026**
 
-[[Paper](https://arxiv.org/abs/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Dataset](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
+[[Paper](https://arxiv.org/abs/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Hugging Face](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
 
 SnapBench is a **paired** benchmark for mobile **snap-and-ask** retrieval: a user takes a photo and asks a short English question. Each query is an image–text pair; the gallery is a shared set of image–caption items. Clean and corrupted variants keep the same target, gallery, and labels, so a score change can be attributed to the input artifact rather than to a new test set.
 
@@ -16,7 +16,7 @@ We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting)
 
 ## News
 
-- **2026-09-03**: Preprint is on arXiv: [2608.29607](https://arxiv.org/abs/2608.29607).
+- **2026-09-03**: Preprint is on arXiv: [2608.29607](https://arxiv.org/abs/2608.29607). Dataset on Hugging Face: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 - **2026-08-30**: Official repository released. SnapBench is accepted to **Findings of EMNLP 2026**. Dataset: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 
 ## Overview
@@ -151,7 +151,7 @@ Web-sourced images can be removed on request. See [TAKEDOWN.md](TAKEDOWN.md). Co
 
 ## Citation
 
-If you use SnapBench or MOOR, please cite:
+If you use SnapBench or MOOR, please cite the paper. The dataset is at [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 
 ```bibtex
 @misc{chen2026snapbenchbenchmarkingsnapandaskmultimodal,

@@ -53,6 +53,9 @@ identifiers:
   - type: url
     value: "https://arxiv.org/abs/2608.29607"
     description: arXiv preprint
+  - type: url
+    value: "https://huggingface.co/datasets/yefd/SnapBench"
+    description: Hugging Face dataset
 keywords:
   - multimodal retrieval
   - robustness
@@ -60,4 +63,5 @@ keywords:
   - benchmark
 license: other
 repository-code: https://github.com/zrchen03/SnapBench
+repository-artifact: https://huggingface.co/datasets/yefd/SnapBench
 url: https://arxiv.org/abs/2608.29607
