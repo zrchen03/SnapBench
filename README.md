@@ -155,13 +155,11 @@ Web-sourced images can be removed on request. See [TAKEDOWN.md](TAKEDOWN.md). Co
 If you use SnapBench or MOOR, please cite the paper. The dataset is at [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 
 ```bibtex
-@misc{chen2026snapbenchbenchmarkingsnapandaskmultimodal,
+@article{chen2026snapbench,
       title={SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions},
       author={Zirong Chen and Fuda Ye and Kuan Zhang and Enjun Du and Junfu Pu and Xinlei Wang and Xinyu Zuo and Lisheng Duan and Jin Ma and Yongqi Zhang},
+      journal={arXiv},
       year={2026},
-      eprint={2608.29607},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
       url={https://arxiv.org/abs/2608.29607},
 }
 ```
