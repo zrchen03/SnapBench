@@ -14,7 +14,7 @@
   <img src="assets/teaser.jpg" alt="SnapBench snap-and-ask retrieval overview" width="100%">
 </p>
 <p align="center">
-  <em>A user snaps a photo and asks a short question. SnapBench keeps the same target, gallery, and labels across clean and corrupted inputs.</em>
+  <em>SnapBench construction pipeline: entity-centric questions, gallery collection, paired image/text artifacts, and human annotation.</em>
 </p>
 
 SnapBench is a **paired** benchmark for mobile **snap-and-ask** retrieval: a user takes a photo and asks a short English question. Each query is an image–text pair; the gallery is a shared set of image–caption items. Clean and corrupted variants keep the same target, gallery, and labels, so a score change can be attributed to the input artifact rather than to a new test set.
@@ -24,7 +24,7 @@ We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting)
 ## News
 
 - **2026-09-03**: Preprint is on arXiv: [2608.29607](https://arxiv.org/abs/2608.29607). Dataset on Hugging Face: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
-- **2026-08-30**: Official repository released. SnapBench is accepted to **Findings of EMNLP 2026**. Dataset: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
+- **2026-08-20**: Official repository released. SnapBench is accepted to **Findings of EMNLP 2026**. Dataset: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 
 ## Overview
 
