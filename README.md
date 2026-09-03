@@ -23,7 +23,7 @@ We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting)
 
 ## News
 
-- **2026-09-03**: Preprint is on arXiv: [2608.29607](https://arxiv.org/abs/2608.29607). Dataset on Hugging Face: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
+- **2026-09-01**: Preprint is on arXiv: [2608.29607](https://arxiv.org/abs/2608.29607). Dataset on Hugging Face: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 - **2026-08-20**: Official repository released. SnapBench is accepted to **Findings of EMNLP 2026**. Dataset: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 
 ## Overview
