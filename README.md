@@ -11,10 +11,10 @@
 [[Paper](https://arxiv.org/abs/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Hugging Face](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
 
 <p align="center">
-  <img src="assets/teaser.jpg" alt="SnapBench snap-and-ask retrieval overview" width="100%">
+  <img src="assets/fig1_overview.jpg" alt="Snap-and-ask retrieval scenario" width="100%">
 </p>
 <p align="center">
-  <em>SnapBench construction pipeline: entity-centric questions, gallery collection, paired image/text artifacts, and human annotation.</em>
+  <em>Figure 1. Snap-and-ask retrieval: a user captures a photo, types a short question, and the system ranks gallery items. The task is entity-centric and artifact-prone.</em>
 </p>
 
 SnapBench is a **paired** benchmark for mobile **snap-and-ask** retrieval: a user takes a photo and asks a short English question. Each query is an image–text pair; the gallery is a shared set of image–caption items. Clean and corrupted variants keep the same target, gallery, and labels, so a score change can be attributed to the input artifact rather than to a new test set.
@@ -38,17 +38,12 @@ We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting)
 | Retrieval modes | II, TT, IT, TI |
 | Models in the paper | 16 dual-encoders and VLM embedding models |
 
-```mermaid
-flowchart LR
-  A["Snapped image"] --> C["Same intent / gallery / labels"]
-  B["Short question"] --> C
-  C --> D["Clean"]
-  C --> E["Text corruption × 8"]
-  C --> F["Image corruption × 15 × 3"]
-  D --> G["Paired ΔR@1"]
-  E --> G
-  F --> G
-```
+<p align="center">
+  <img src="assets/fig2_pipeline.jpg" alt="SnapBench construction pipeline" width="100%">
+</p>
+<p align="center">
+  <em>Figure 2. SnapBench construction pipeline: entity-centric questions, gallery collection, paired image/text artifacts, and human annotation.</em>
+</p>
 
 **Why another benchmark.** ImageNet-C and TextAttack change the test instance per corruption. SnapBench does not: only the observed query changes. It is also the setting that can measure joint image–text artifacts and the **coarse-text drag** (adding a coarse question can hurt relative to image-only retrieval).
 
