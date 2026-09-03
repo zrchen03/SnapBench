@@ -35,7 +35,6 @@ We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting)
 | Corruption conditions | **53** (45 image + 8 text) |
 | Evaluation states | 54 (53 corrupted + 1 clean) |
 | Human labels | ~34,000 query–candidate pairs |
-| Retrieval modes | II, TT, IT, TI |
 | Models in the paper | 16 dual-encoders and VLM embedding models |
 
 <p align="center">
