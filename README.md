@@ -170,7 +170,3 @@ If you use SnapBench or MOOR, please cite the paper. The dataset is at [yefd/Sna
 Dataset: https://huggingface.co/datasets/yefd/SnapBench
 
 A machine-readable copy is in [`CITATION.cff`](CITATION.cff).
-
-## Contact
-
-Zirong Chen ([imzrchen@gmail.com](mailto:imzrchen@gmail.com)) · Yongqi Zhang ([yongqizhang@hkust-gz.edu.cn](mailto:yongqizhang@hkust-gz.edu.cn), corresponding author)
