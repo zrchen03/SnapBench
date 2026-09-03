@@ -1,13 +1,14 @@
 # SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions
 
-[![Paper](https://img.shields.io/badge/Paper-Findings%20of%20EMNLP%202026-blue)](https://openreview.net/forum?id=RWvQqyyWr3)
+[![Paper](https://img.shields.io/badge/Paper-Findings%20of%20EMNLP%202026-blue)](https://arxiv.org/abs/2608.29607)
+[![arXiv](https://img.shields.io/badge/arXiv-2608.29607-b31b1b)](https://arxiv.org/abs/2608.29607)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-yefd%2FSnapBench-yellow)](https://huggingface.co/datasets/yefd/SnapBench)
 [![License](https://img.shields.io/badge/Data-Research%20Only-red)](LICENSE)
 [![Code](https://img.shields.io/badge/Code-Apache%202.0-green)](LICENSE)
 
 **Findings of EMNLP 2026**
 
-[[Paper](https://openreview.net/forum?id=RWvQqyyWr3)] · [[Dataset](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
+[[Paper](https://arxiv.org/abs/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Dataset](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
 
 SnapBench is a **paired** benchmark for mobile **snap-and-ask** retrieval: a user takes a photo and asks a short English question. Each query is an image–text pair; the gallery is a shared set of image–caption items. Clean and corrupted variants keep the same target, gallery, and labels, so a score change can be attributed to the input artifact rather than to a new test set.
 
@@ -15,6 +16,7 @@ We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting)
 
 ## News
 
+- **2026-09-03**: Preprint is on arXiv: [2608.29607](https://arxiv.org/abs/2608.29607).
 - **2026-08-30**: Official repository released. SnapBench is accepted to **Findings of EMNLP 2026**. Dataset: [yefd/SnapBench](https://huggingface.co/datasets/yefd/SnapBench).
 
 ## Overview
@@ -152,11 +154,14 @@ Web-sourced images can be removed on request. See [TAKEDOWN.md](TAKEDOWN.md). Co
 If you use SnapBench or MOOR, please cite:
 
 ```bibtex
-@inproceedings{chen2026snapbench,
-  title     = {{SnapBench}: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions},
-  author    = {Chen, Zirong and Ye, Fuda and Zhang, Kuan and Du, Enjun and Pu, Junfu and Wang, Xinlei and Zuo, Xinyu and Duan, Lisheng and Ma, Jin and Zhang, Yongqi},
-  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
-  year      = {2026}
+@misc{chen2026snapbenchbenchmarkingsnapandaskmultimodal,
+      title={SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions},
+      author={Zirong Chen and Fuda Ye and Kuan Zhang and Enjun Du and Junfu Pu and Xinlei Wang and Xinyu Zuo and Lisheng Duan and Jin Ma and Yongqi Zhang},
+      year={2026},
+      eprint={2608.29607},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2608.29607},
 }
 ```
 

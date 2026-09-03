@@ -48,6 +48,11 @@ preferred-citation:
       given-names: Yongqi
   year: 2026
   collection-title: "Findings of the Association for Computational Linguistics: EMNLP 2026"
+  url: "https://arxiv.org/abs/2608.29607"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2608.29607"
+    description: arXiv preprint
 keywords:
   - multimodal retrieval
   - robustness
@@ -55,4 +60,4 @@ keywords:
   - benchmark
 license: other
 repository-code: https://github.com/zrchen03/SnapBench
-url: https://huggingface.co/datasets/yefd/SnapBench
+url: https://arxiv.org/abs/2608.29607
