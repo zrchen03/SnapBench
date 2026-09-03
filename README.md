@@ -10,6 +10,13 @@
 
 [[Paper](https://arxiv.org/abs/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Hugging Face](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
 
+<p align="center">
+  <img src="assets/teaser.jpg" alt="SnapBench snap-and-ask retrieval overview" width="100%">
+</p>
+<p align="center">
+  <em>A user snaps a photo and asks a short question. SnapBench keeps the same target, gallery, and labels across clean and corrupted inputs.</em>
+</p>
+
 SnapBench is a **paired** benchmark for mobile **snap-and-ask** retrieval: a user takes a photo and asks a short English question. Each query is an image–text pair; the gallery is a shared set of image–caption items. Clean and corrupted variants keep the same target, gallery, and labels, so a score change can be attributed to the input artifact rather than to a new test set.
 
 We also release **MOOR** (Modality-anchored, Outlier-aware, Optimal Reweighting), a training-free adaptive fusion baseline.
@@ -164,6 +171,8 @@ If you use SnapBench or MOOR, please cite the paper. The dataset is at [yefd/Sna
       url={https://arxiv.org/abs/2608.29607},
 }
 ```
+
+Dataset: https://huggingface.co/datasets/yefd/SnapBench
 
 A machine-readable copy is in [`CITATION.cff`](CITATION.cff).
 
