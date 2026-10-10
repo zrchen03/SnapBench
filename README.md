@@ -1,6 +1,7 @@
 # SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions
 
-[![Paper](https://img.shields.io/badge/Paper-Findings%20of%20EMNLP%202026-blue)](https://arxiv.org/abs/2608.29607)
+[![Project Website](https://img.shields.io/badge/Project-Website-3b9c78)](https://zrchen03.github.io/SnapBench/)
+[![Paper](https://img.shields.io/badge/Paper-Findings%20of%20EMNLP%202026-blue)](https://arxiv.org/pdf/2608.29607)
 [![arXiv](https://img.shields.io/badge/arXiv-2608.29607-b31b1b)](https://arxiv.org/abs/2608.29607)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-yefd%2FSnapBench-yellow)](https://huggingface.co/datasets/yefd/SnapBench)
 [![License](https://img.shields.io/badge/Data-Research%20Only-red)](LICENSE)
@@ -8,7 +9,7 @@
 
 **Findings of EMNLP 2026**
 
-[[Paper](https://arxiv.org/abs/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Hugging Face](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
+[[Project Website](https://zrchen03.github.io/SnapBench/)] · [[Paper](https://arxiv.org/pdf/2608.29607)] · [[arXiv](https://arxiv.org/abs/2608.29607)] · [[Hugging Face](https://huggingface.co/datasets/yefd/SnapBench)] · [[Citation](#citation)]
 
 <p align="center">
   <img src="assets/fig1_overview.jpg" alt="Snap-and-ask retrieval scenario" width="100%">

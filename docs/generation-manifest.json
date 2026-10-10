@@ -1,0 +1,1416 @@
+{
+  "source_commit": "f8ae013d91c73f4a8eae9552f63d9afdbedec727",
+  "source_url": "https://raw.githubusercontent.com/zrchen03/SnapBench/f8ae013d91c73f4a8eae9552f63d9afdbedec727/benchmark/gen_image_perturbations.py",
+  "source_sha256": "f193cd4b0976bb5dc730847b5b937c580de571c1c34cd455abde55d68a81bebb",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.2.6",
+  "opencv": "4.12.0",
+  "pillow": "12.3.0",
+  "PYTHONHASHSEED": "0",
+  "official_font_available": false,
+  "font_policy": "Unmodified official font lookup, including its load_default fallback",
+  "count": 90,
+  "text_variants_checked": 16,
+  "generated": [
+    {
+      "query": "bench_0172",
+      "operation": "low_light",
+      "severity": 1,
+      "seed": 4169098685,
+      "params": {
+        "brightness": 0.7,
+        "noise_std": 3
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-low_light-s1.jpg",
+      "sha256": "c7d590d342eb95b86f623a1a3ec2933e986776cb8b99b79d2ceaef44e40e2b0f"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "low_light",
+      "severity": 2,
+      "seed": 4169106604,
+      "params": {
+        "brightness": 0.4,
+        "noise_std": 10
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-low_light-s2.jpg",
+      "sha256": "31fa9c9d87493802c73a3413a4ae7deee25cf4b60d0cd83771e4188bb070dd42"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "low_light",
+      "severity": 3,
+      "seed": 4169114523,
+      "params": {
+        "brightness": 0.15,
+        "noise_std": 22
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-low_light-s3.jpg",
+      "sha256": "6b415ffb6947e9448e4671c900db946f2736aa5a06b25f285fc72cb25b1dad85"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "overexposure",
+      "severity": 1,
+      "seed": 2117822936,
+      "params": {
+        "factor": 1.4
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-overexposure-s1.jpg",
+      "sha256": "b00fd759f40a1166946982f8ca00109b8a97c69c35fc462a08284117ca1d0573"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "overexposure",
+      "severity": 2,
+      "seed": 2117830855,
+      "params": {
+        "factor": 2.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-overexposure-s2.jpg",
+      "sha256": "871711526f0847a349572c6e899aec1d26b6f4d78281149a6a6f7087662f31e1"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "overexposure",
+      "severity": 3,
+      "seed": 2117838774,
+      "params": {
+        "factor": 3.0
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-overexposure-s3.jpg",
+      "sha256": "cb1e911b60d57010d57a6477eab93d625a512c3db9e97aae972c1e52b7dc2a6c"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "defocus_blur",
+      "severity": 1,
+      "seed": 3217423215,
+      "params": {
+        "sigma": 1.0
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-defocus_blur-s1.jpg",
+      "sha256": "fb7b064a5de09a4d63b1c09abd55ea2989e2027f6576b2c5d447308bdf931a95"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "defocus_blur",
+      "severity": 2,
+      "seed": 3217431134,
+      "params": {
+        "sigma": 3.5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-defocus_blur-s2.jpg",
+      "sha256": "b71fbc78909a01c99355a5043b77de264e2b9a56d07f39cc571d80ebe6ef464a"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "defocus_blur",
+      "severity": 3,
+      "seed": 3217439053,
+      "params": {
+        "sigma": 10.0
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-defocus_blur-s3.jpg",
+      "sha256": "cb19abafc68547fa78968e3582d0a2410d09c17f638240af02f694e80bb58e94"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "motion_blur",
+      "severity": 1,
+      "seed": 872458123,
+      "params": {
+        "ks": 5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-motion_blur-s1.jpg",
+      "sha256": "d5e342e6378052b17ac4e82593734be168718eeedb933afaca11664c2fca5a71"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "motion_blur",
+      "severity": 2,
+      "seed": 872466042,
+      "params": {
+        "ks": 13
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-motion_blur-s2.jpg",
+      "sha256": "afeb27fab8539ba44fbce7dab38fa9bc36d3d54578813428c6c891adfa4a887d"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "motion_blur",
+      "severity": 3,
+      "seed": 872473961,
+      "params": {
+        "ks": 25
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-motion_blur-s3.jpg",
+      "sha256": "07e11e5b4abb34097a414024102e8f88836c1f44bb32fe1d95c7ea8d5ad137a7"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "compression",
+      "severity": 1,
+      "seed": 1781972968,
+      "params": {
+        "quality": 50
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-compression-s1.jpg",
+      "sha256": "4754b5be1afbe10647a20cbaeaa72eaf0e489800c04bb077657c499e150bbd96"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "compression",
+      "severity": 2,
+      "seed": 1781980887,
+      "params": {
+        "quality": 18
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-compression-s2.jpg",
+      "sha256": "0cba7c3ab8975793a10d3de16d65654a41d5b1546193b9157c26704571c764fc"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "compression",
+      "severity": 3,
+      "seed": 1781988806,
+      "params": {
+        "quality": 5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-compression-s3.jpg",
+      "sha256": "0a1a95f2e37502db876a534e75243a88e0c8bb46f3ae910b8c2a89f4db6af9ea"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "low_resolution",
+      "severity": 1,
+      "seed": 3253238476,
+      "params": {
+        "scale": 0.5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-low_resolution-s1.jpg",
+      "sha256": "739a58163b292e7832b3bd649a566bacd6d3a7c2ca3b70fd878845a20d9002db"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "low_resolution",
+      "severity": 2,
+      "seed": 3253246395,
+      "params": {
+        "scale": 0.25
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-low_resolution-s2.jpg",
+      "sha256": "1489e17415ef96d550cb61cb2c003ff6c780edac216ec1f99fe0fe99c263d5a1"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "low_resolution",
+      "severity": 3,
+      "seed": 3253254314,
+      "params": {
+        "scale": 0.08
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-low_resolution-s3.jpg",
+      "sha256": "86edda6a4086a814d6b9c6bb01accec9428a890f12ed577120aa66bb2db4001b"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "rotation",
+      "severity": 1,
+      "seed": 4279068257,
+      "params": {
+        "angle": 10
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-rotation-s1.jpg",
+      "sha256": "304c46c2c4c4f96224544d1a509960663c90298a7dc2908383be0e8277eb59d1"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "rotation",
+      "severity": 2,
+      "seed": 4279076176,
+      "params": {
+        "angle": 45
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-rotation-s2.jpg",
+      "sha256": "c2fa09b59e469c7e729c8815ed618b4bb111fa9c63651bb43449a585974d1f47"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "rotation",
+      "severity": 3,
+      "seed": 4279084095,
+      "params": {
+        "angle": 180
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-rotation-s3.jpg",
+      "sha256": "5d1598d7ec744278093f923805792d3d70f6c2ab52ad8f7be650c530419db6b6"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "perspective",
+      "severity": 1,
+      "seed": 2806303452,
+      "params": {
+        "d_ratio": 0.1
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-perspective-s1.jpg",
+      "sha256": "c0e00d53729ea91f1ac553c6d62826d851b9d85a36b80a60ef2bcca5a8697d04"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "perspective",
+      "severity": 2,
+      "seed": 2806311371,
+      "params": {
+        "d_ratio": 0.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-perspective-s2.jpg",
+      "sha256": "26151262872898d559b7fea8a3d8d0595d2923c2958e5f399b46f863a01fac3c"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "perspective",
+      "severity": 3,
+      "seed": 2806319290,
+      "params": {
+        "d_ratio": 0.3
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-perspective-s3.jpg",
+      "sha256": "556f8a3ee4c26abe699b54f91a53a7abd3ea008e931f0b206c5feeb39c420d10"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "lens_distortion",
+      "severity": 1,
+      "seed": 584059477,
+      "params": {
+        "k1": -0.1
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-lens_distortion-s1.jpg",
+      "sha256": "d9e43b45e7ebc6c9bea3146107113c78a767c668585a974265c9f67b764d4675"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "lens_distortion",
+      "severity": 2,
+      "seed": 584067396,
+      "params": {
+        "k1": -0.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-lens_distortion-s2.jpg",
+      "sha256": "3a3ec7d0d6bb07300fb64fc4f92adf829a1448956f0fa9a620a8885fccd7a39c"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "lens_distortion",
+      "severity": 3,
+      "seed": 584075315,
+      "params": {
+        "k1": -0.3
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-lens_distortion-s3.jpg",
+      "sha256": "a827ca81a8f0fb6458852bd0dc0f4b217157f3a3e560020dd1825cb642355ac5"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "cropping",
+      "severity": 1,
+      "seed": 1264129443,
+      "params": {
+        "keep_ratio": 0.9
+      },
+      "size": [
+        1382,
+        1843
+      ],
+      "file": "assets/official-bench_0172-cropping-s1.jpg",
+      "sha256": "f7ad2488ba8c27c7628c6af20d7a6e93c205f563383f4d1bd7e0ad548f424d5d"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "cropping",
+      "severity": 2,
+      "seed": 1264137362,
+      "params": {
+        "keep_ratio": 0.65
+      },
+      "size": [
+        998,
+        1331
+      ],
+      "file": "assets/official-bench_0172-cropping-s2.jpg",
+      "sha256": "8b93854097f5f2a3478cf6c0ab0116f3701ff1bc49a4b1452e01a3430636212f"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "cropping",
+      "severity": 3,
+      "seed": 1264145281,
+      "params": {
+        "keep_ratio": 0.4
+      },
+      "size": [
+        614,
+        819
+      ],
+      "file": "assets/official-bench_0172-cropping-s3.jpg",
+      "sha256": "8865cace50f580db948a14e2ccff5d84f251e37dfe89a5fe3ea6c738441e8698"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "downscale",
+      "severity": 1,
+      "seed": 1469583434,
+      "params": {
+        "scale": 0.2
+      },
+      "size": [
+        307,
+        409
+      ],
+      "file": "assets/official-bench_0172-downscale-s1.jpg",
+      "sha256": "974ac5bf05f65749e71718f4deaac28e8b974e701543c54318a963ac14466c4f"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "downscale",
+      "severity": 2,
+      "seed": 1469591353,
+      "params": {
+        "scale": 0.1
+      },
+      "size": [
+        153,
+        204
+      ],
+      "file": "assets/official-bench_0172-downscale-s2.jpg",
+      "sha256": "02307b4b005f5f825a74e748e795baf240ee24c6caa7dc46bb4fab1514699fca"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "downscale",
+      "severity": 3,
+      "seed": 1469599272,
+      "params": {
+        "scale": 0.04
+      },
+      "size": [
+        61,
+        81
+      ],
+      "file": "assets/official-bench_0172-downscale-s3.jpg",
+      "sha256": "3b918f262ce61eba035b07ebe5a28fe22dc261e611439fa31f111101c5b28b4c"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "watermark",
+      "severity": 1,
+      "seed": 2396902260,
+      "params": {
+        "opacity": 80,
+        "mode": "single"
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-watermark-s1.jpg",
+      "sha256": "466d51d82acbb44fb2f75bbaf47c9f98abe21c557f3f97229444305622efb6e2"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "watermark",
+      "severity": 2,
+      "seed": 2396910179,
+      "params": {
+        "opacity": 160,
+        "mode": "half_tile"
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-watermark-s2.jpg",
+      "sha256": "1adde0865f6b53e38124a231b6bf91322436ebae1f5db7835e4831b2bc9628bd"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "watermark",
+      "severity": 3,
+      "seed": 2396918098,
+      "params": {
+        "opacity": 220,
+        "mode": "full_tile"
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-watermark-s3.jpg",
+      "sha256": "fe329f7ecf8181250b323a8288111b71126b5f4cdbdbbfda6016ff3140ca9c0b"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "mosaic",
+      "severity": 1,
+      "seed": 3941529080,
+      "params": {
+        "bs": 42,
+        "n_blocks": 1,
+        "block_ratio": 0.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-mosaic-s1.jpg",
+      "sha256": "63f0071b812f91116dd7ac77acb4096b9f9a0f2368a83274c0659fd935acb0b4"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "mosaic",
+      "severity": 2,
+      "seed": 3941536999,
+      "params": {
+        "bs": 42,
+        "n_blocks": 2,
+        "block_ratio": 0.35
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-mosaic-s2.jpg",
+      "sha256": "d9cd2841d38eb3500530f04069cc6968abb2668ae167def0828ca331b98808cd"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "mosaic",
+      "severity": 3,
+      "seed": 3941544918,
+      "params": {
+        "bs": 42,
+        "n_blocks": 4,
+        "block_ratio": 0.55
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-mosaic-s3.jpg",
+      "sha256": "239da243ce7c20fd577ee1d46d829345174477e2ce10f35808b07c2e6c2f5696"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "scribble",
+      "severity": 1,
+      "seed": 2331091386,
+      "params": {
+        "n_lines": 3,
+        "thickness": 2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-scribble-s1.jpg",
+      "sha256": "9e75eb1ce57eed857deb5fedc2e5c54e71d4fd795b6eba3e71a084ed89d845e9"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "scribble",
+      "severity": 2,
+      "seed": 2331099305,
+      "params": {
+        "n_lines": 6,
+        "thickness": 4
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-scribble-s2.jpg",
+      "sha256": "d935cc405888eb29adddf7d9e686c99059cf86711b71f1a19521c3a5c6a05791"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "scribble",
+      "severity": 3,
+      "seed": 2331107224,
+      "params": {
+        "n_lines": 9,
+        "thickness": 5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-scribble-s3.jpg",
+      "sha256": "6ea1561fb3de30fbd199f82fa18cb858f4ab274bd6a546414c6746e88cdfea63"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "ui_elements",
+      "severity": 1,
+      "seed": 2250032254,
+      "params": {
+        "elements": [
+          "top_bar"
+        ]
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-ui_elements-s1.jpg",
+      "sha256": "77614449192182f3baa1e70b7b6a482780b1ea00e7c884592ac8e941b35c0bd7"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "ui_elements",
+      "severity": 2,
+      "seed": 2250040173,
+      "params": {
+        "elements": [
+          "top_bar",
+          "bottom_bar"
+        ]
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-ui_elements-s2.jpg",
+      "sha256": "50b0888bda90b967b193e0c5487f39e169454305b0150a8182860aa5cc5cf9a6"
+    },
+    {
+      "query": "bench_0172",
+      "operation": "ui_elements",
+      "severity": 3,
+      "seed": 2250048092,
+      "params": {
+        "elements": [
+          "top_bar",
+          "bottom_bar",
+          "address_bar",
+          "fab_button"
+        ]
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0172-ui_elements-s3.jpg",
+      "sha256": "f67609e832e7068e47d05cb59f84054035bfb45ac812e9d4c07f2fad0657a46a"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "low_light",
+      "severity": 1,
+      "seed": 3458880097,
+      "params": {
+        "brightness": 0.7,
+        "noise_std": 3
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-low_light-s1.jpg",
+      "sha256": "c37067e77a86ba01b4ae3820f0d87a24f28608e7ac4074bc5f32ffebe78bac26"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "low_light",
+      "severity": 2,
+      "seed": 3458888016,
+      "params": {
+        "brightness": 0.4,
+        "noise_std": 10
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-low_light-s2.jpg",
+      "sha256": "fcc09f624a8efed5aaf553bda023e2865fd23bf34f6ac4daac7bdb8a2d6113fb"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "low_light",
+      "severity": 3,
+      "seed": 3458895935,
+      "params": {
+        "brightness": 0.15,
+        "noise_std": 22
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-low_light-s3.jpg",
+      "sha256": "049d93fbc83e698bae2d97cff93e8b0ec6adc5aed7dd929a57fb7e83d61bc7e5"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "overexposure",
+      "severity": 1,
+      "seed": 2369852148,
+      "params": {
+        "factor": 1.4
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-overexposure-s1.jpg",
+      "sha256": "092ab18729e186c3d7465ff59aef0bafa20f8c71f3f81df4249cc7db461cf2b1"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "overexposure",
+      "severity": 2,
+      "seed": 2369860067,
+      "params": {
+        "factor": 2.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-overexposure-s2.jpg",
+      "sha256": "48da54fe65f21dda0f9f21d21483c0ee9fd31b6ce3490e0500db577e33b0ffc6"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "overexposure",
+      "severity": 3,
+      "seed": 2369867986,
+      "params": {
+        "factor": 3.0
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-overexposure-s3.jpg",
+      "sha256": "77f26b3db983d449a1b060229dc0ffd969ab9ee809e6add5a6a92b7bf0f2fb82"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "defocus_blur",
+      "severity": 1,
+      "seed": 76697707,
+      "params": {
+        "sigma": 1.0
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-defocus_blur-s1.jpg",
+      "sha256": "459a34534d76d9c4a8c40ca44b72aa582c178f7cf373f3c082efaa9fef0d625a"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "defocus_blur",
+      "severity": 2,
+      "seed": 76705626,
+      "params": {
+        "sigma": 3.5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-defocus_blur-s2.jpg",
+      "sha256": "871a859659e9c3d39e0aaf4857faa3bbd69363d5f685fb4fb0b304a784d48261"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "defocus_blur",
+      "severity": 3,
+      "seed": 76713545,
+      "params": {
+        "sigma": 10.0
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-defocus_blur-s3.jpg",
+      "sha256": "45723a09c2b9e5e0516e62bbf1476440e1acd052dc5fcc8d6d761577393da7fe"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "motion_blur",
+      "severity": 1,
+      "seed": 1542530610,
+      "params": {
+        "ks": 5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-motion_blur-s1.jpg",
+      "sha256": "a156ef787152092466989554cb4210ece3b739712f2b0488a22df28698bfabea"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "motion_blur",
+      "severity": 2,
+      "seed": 1542538529,
+      "params": {
+        "ks": 13
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-motion_blur-s2.jpg",
+      "sha256": "404e53bff8ae4f9da3e5b23dd32b09bfc26a4ecce534a5d2e7c6ac9bb4aee2b8"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "motion_blur",
+      "severity": 3,
+      "seed": 1542546448,
+      "params": {
+        "ks": 25
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-motion_blur-s3.jpg",
+      "sha256": "f82a895a851a753587a3427860db1bb793d0c292f0c8567f4df3eea43503e53f"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "compression",
+      "severity": 1,
+      "seed": 221390118,
+      "params": {
+        "quality": 50
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-compression-s1.jpg",
+      "sha256": "5a29d9f7fba5598beea83ef3c3a48a4d3c1a2c68b0335a129ff130e34e9da969"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "compression",
+      "severity": 2,
+      "seed": 221398037,
+      "params": {
+        "quality": 18
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-compression-s2.jpg",
+      "sha256": "ecb60557153db4dfd08afccfac697bca3953927078a23036c2b8c76e5a61ab30"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "compression",
+      "severity": 3,
+      "seed": 221405956,
+      "params": {
+        "quality": 5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-compression-s3.jpg",
+      "sha256": "f0ec15b52cf651e8c2b9df55f53f27f688dd35be3648487446e8ca6edd5136ab"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "low_resolution",
+      "severity": 1,
+      "seed": 2781628616,
+      "params": {
+        "scale": 0.5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-low_resolution-s1.jpg",
+      "sha256": "85ebdd258f5bc2fae921b5365fe9ae770a33455fa66ce2f0426ff410f833105e"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "low_resolution",
+      "severity": 2,
+      "seed": 2781636535,
+      "params": {
+        "scale": 0.25
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-low_resolution-s2.jpg",
+      "sha256": "728c2e8287cbfb6597d505bf7fece2b159c389b4c86a7cbeffa7c09221352161"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "low_resolution",
+      "severity": 3,
+      "seed": 2781644454,
+      "params": {
+        "scale": 0.08
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-low_resolution-s3.jpg",
+      "sha256": "1d83320d5c7321b8f5bc1355fac78c8481a6e6ab0711c3b00c7109afdedf0112"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "rotation",
+      "severity": 1,
+      "seed": 4115656379,
+      "params": {
+        "angle": 10
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-rotation-s1.jpg",
+      "sha256": "d3af12d94c3d8f36cf44b69449f7f38f43673b4d44057eaaf945e9ddbaf6302f"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "rotation",
+      "severity": 2,
+      "seed": 4115664298,
+      "params": {
+        "angle": 45
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-rotation-s2.jpg",
+      "sha256": "d2bd83c2829f2638491951ee8218422c23747ad8977106bd3a4b880fe9811292"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "rotation",
+      "severity": 3,
+      "seed": 4115672217,
+      "params": {
+        "angle": 180
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-rotation-s3.jpg",
+      "sha256": "8dbdddbd42c6b5463dac89fe71cdb1bd57fb3265b970c1c11f02782f46391285"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "perspective",
+      "severity": 1,
+      "seed": 1088552304,
+      "params": {
+        "d_ratio": 0.1
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-perspective-s1.jpg",
+      "sha256": "617e65b10056c0dffae20e3d4b762dec3cd38e4fe07a1dfc150813f38c85cc6a"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "perspective",
+      "severity": 2,
+      "seed": 1088560223,
+      "params": {
+        "d_ratio": 0.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-perspective-s2.jpg",
+      "sha256": "dfd113aa314e8844c7cda05216fbc967f38a399effa2718f57879b454b18aca7"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "perspective",
+      "severity": 3,
+      "seed": 1088568142,
+      "params": {
+        "d_ratio": 0.3
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-perspective-s3.jpg",
+      "sha256": "8d47ac169fe654fbb96932e51551f8fc08d69e4627f5296bc300f52c45ba3596"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "lens_distortion",
+      "severity": 1,
+      "seed": 1397003509,
+      "params": {
+        "k1": -0.1
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-lens_distortion-s1.jpg",
+      "sha256": "513931f8a1e4a1f457480f95c2183810286f55aae600846f7e067f98a00d78f0"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "lens_distortion",
+      "severity": 2,
+      "seed": 1397011428,
+      "params": {
+        "k1": -0.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-lens_distortion-s2.jpg",
+      "sha256": "0b7002b63cf277c3f44e30adfc60d9637289058669e97beb57a77541a134ddaf"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "lens_distortion",
+      "severity": 3,
+      "seed": 1397019347,
+      "params": {
+        "k1": -0.3
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-lens_distortion-s3.jpg",
+      "sha256": "904df1ec24d54af40d18cd3668f6f5fc530b83ee040e92e11add69b14f25b1ed"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "cropping",
+      "severity": 1,
+      "seed": 1797037675,
+      "params": {
+        "keep_ratio": 0.9
+      },
+      "size": [
+        1382,
+        1843
+      ],
+      "file": "assets/official-bench_0131-cropping-s1.jpg",
+      "sha256": "a130030b9f160885d95a8011b97144dd345bd423b661942fc9a00e9aeee30f5d"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "cropping",
+      "severity": 2,
+      "seed": 1797045594,
+      "params": {
+        "keep_ratio": 0.65
+      },
+      "size": [
+        998,
+        1331
+      ],
+      "file": "assets/official-bench_0131-cropping-s2.jpg",
+      "sha256": "308c428ff42aa75e5f4ce6316bc68a4be8de14f720e0a55dd5e138b073d9840b"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "cropping",
+      "severity": 3,
+      "seed": 1797053513,
+      "params": {
+        "keep_ratio": 0.4
+      },
+      "size": [
+        614,
+        819
+      ],
+      "file": "assets/official-bench_0131-cropping-s3.jpg",
+      "sha256": "6713130220905e63a49bbb2b35936f7a157fcc3cda6d44bbf63dffa3cd6fc05b"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "downscale",
+      "severity": 1,
+      "seed": 486586987,
+      "params": {
+        "scale": 0.2
+      },
+      "size": [
+        307,
+        409
+      ],
+      "file": "assets/official-bench_0131-downscale-s1.jpg",
+      "sha256": "6c0cf21a403d79a7f4e09551f75d7716e4d176cb5cb46a79ef5b415bf8deb9be"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "downscale",
+      "severity": 2,
+      "seed": 486594906,
+      "params": {
+        "scale": 0.1
+      },
+      "size": [
+        153,
+        204
+      ],
+      "file": "assets/official-bench_0131-downscale-s2.jpg",
+      "sha256": "2845d5ec23ef82678c7a07b26c9ed42776becb3115d73d4e56401a19ff4cef07"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "downscale",
+      "severity": 3,
+      "seed": 486602825,
+      "params": {
+        "scale": 0.04
+      },
+      "size": [
+        61,
+        81
+      ],
+      "file": "assets/official-bench_0131-downscale-s3.jpg",
+      "sha256": "55404d6930688ee73e650300cb2bcbe2c6874860e420582cb73b545c28883428"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "watermark",
+      "severity": 1,
+      "seed": 744297733,
+      "params": {
+        "opacity": 80,
+        "mode": "single"
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-watermark-s1.jpg",
+      "sha256": "80491bfd99e849b452b5a199e142973f817dc135cd240b4e35c0e4fa54320eb1"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "watermark",
+      "severity": 2,
+      "seed": 744305652,
+      "params": {
+        "opacity": 160,
+        "mode": "half_tile"
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-watermark-s2.jpg",
+      "sha256": "d1897681c07fd2053747461d4ce0a156c19189215719de571384496e75e0e43b"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "watermark",
+      "severity": 3,
+      "seed": 744313571,
+      "params": {
+        "opacity": 220,
+        "mode": "full_tile"
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-watermark-s3.jpg",
+      "sha256": "6c436ab170d5643a72cebc16ceada3bfe7162cc07c9e20d09a09d3ce3705951b"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "mosaic",
+      "severity": 1,
+      "seed": 97445487,
+      "params": {
+        "bs": 42,
+        "n_blocks": 1,
+        "block_ratio": 0.2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-mosaic-s1.jpg",
+      "sha256": "ea387b0251e5b08b80b6b66721bbf9a935ecd803068ed49deee43450cd8d8781"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "mosaic",
+      "severity": 2,
+      "seed": 97453406,
+      "params": {
+        "bs": 42,
+        "n_blocks": 2,
+        "block_ratio": 0.35
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-mosaic-s2.jpg",
+      "sha256": "74974c73ccd11a5569f6c6b03a2e55eae21812fc8da987dee5712d717bf32f38"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "mosaic",
+      "severity": 3,
+      "seed": 97461325,
+      "params": {
+        "bs": 42,
+        "n_blocks": 4,
+        "block_ratio": 0.55
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-mosaic-s3.jpg",
+      "sha256": "04047570a0ae71934ea7435291afc4eb267a3e2ef895c39fdeca67ff98ce044a"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "scribble",
+      "severity": 1,
+      "seed": 606873167,
+      "params": {
+        "n_lines": 3,
+        "thickness": 2
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-scribble-s1.jpg",
+      "sha256": "45c89d4a233ed8d0be54e44e16a6eb5372cd05a1b92736953c21dcd919005270"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "scribble",
+      "severity": 2,
+      "seed": 606881086,
+      "params": {
+        "n_lines": 6,
+        "thickness": 4
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-scribble-s2.jpg",
+      "sha256": "45e8500bfb9ae79896c717f3f4e2e58d319db6156bece2b42f605a935ec6c093"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "scribble",
+      "severity": 3,
+      "seed": 606889005,
+      "params": {
+        "n_lines": 9,
+        "thickness": 5
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-scribble-s3.jpg",
+      "sha256": "b385fbf0ef18c8809113b70ff8f19084d2aeb46e8e4842ff9ca6ae34864a6366"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "ui_elements",
+      "severity": 1,
+      "seed": 2788217100,
+      "params": {
+        "elements": [
+          "top_bar"
+        ]
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-ui_elements-s1.jpg",
+      "sha256": "a7c08672a6b01ad545d059ed7403acdb0a2daa90ebfc91b986ba4aea62d0c0a0"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "ui_elements",
+      "severity": 2,
+      "seed": 2788225019,
+      "params": {
+        "elements": [
+          "top_bar",
+          "bottom_bar"
+        ]
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-ui_elements-s2.jpg",
+      "sha256": "a53b879fa65c5be1305f99b4f5c58b8dd3f93f7f5be2af4902979001a5c9bf24"
+    },
+    {
+      "query": "bench_0131",
+      "operation": "ui_elements",
+      "severity": 3,
+      "seed": 2788232938,
+      "params": {
+        "elements": [
+          "top_bar",
+          "bottom_bar",
+          "address_bar",
+          "fab_button"
+        ]
+      },
+      "size": [
+        1536,
+        2048
+      ],
+      "file": "assets/official-bench_0131-ui_elements-s3.jpg",
+      "sha256": "e7af2513f03f6a74e7b44627e373cdabfb25290134ba8d1e5dfab1cf0bbeb28c"
+    }
+  ]
+}
